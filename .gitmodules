@@ -1,0 +1,3 @@
+[submodule "simulations_in_genetics"]
+	path = simulations_in_genetics
+	url = https://github.com/TemiPete/isiro.git
