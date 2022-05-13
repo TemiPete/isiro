@@ -13,3 +13,4 @@ output:
     toc_float: yes
     theme: cosmo
     highlight: textmate
+    style: ../../temipete.github.io/assets/css/_sass/style.scss
