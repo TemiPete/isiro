@@ -1,0 +1,18 @@
+---
+title: "Simulating discrete and continuous populations"
+author: "Temi"
+date: "2022-05-13"
+output: workflowr::wflow_html
+editor_options:
+  chunk_output_type: console
+---
+
+## Introduction
+Oftentimes, we want to simulate populations in order to do some analysis. 
+
+Before simulating, we need to know what a population is. In genetics, a population is some differences in allele frequencies between groups of people. 
+
+```{r}
+
+```
+
