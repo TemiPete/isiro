@@ -1,7 +1,7 @@
-name: "simulations_in_math"
+name: simulations_in_math
 output_dir: ../docs
 navbar:
-  title: "simulations_in_math"
+  title: simulations_in_math
   left:
   - text: Home
     href: index.html
@@ -9,6 +9,10 @@ navbar:
     href: about.html
   - text: License
     href: license.html
+  right:
+  - icon: fab fa-github
+    text: Source code
+    href: https://github.com/temipete/isiro
 output:
   workflowr::wflow_html:
     toc: yes
