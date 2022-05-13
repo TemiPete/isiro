@@ -3,10 +3,14 @@ output_dir: ../docs
 navbar:
   title: "isiro"
   left:
-  - text: Home
+  - text: home
     href: ../../temipete.github.io
-  - text: License
-    href: license.html
+  - text: projects
+    href: ../../temipete.github.io/projects
+  - text: thoughts
+    href: ../../temipete.github.io/blog
+  # - text: license
+  #   href: license.html
 output:
   workflowr::wflow_html:
     toc: yes
