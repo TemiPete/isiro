@@ -4,7 +4,7 @@ navbar:
   title: "isiro"
   left:
   - text: Home
-    href: temipete.github.io
+    href: ../../temipete.github.io
   - text: License
     href: license.html
 output:
