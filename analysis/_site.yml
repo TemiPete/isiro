@@ -1,7 +1,7 @@
 name: "isiro"
 output_dir: ../docs
 navbar:
-  title: "isiro"
+  title: ""
   left:
   - text: home
     href: /
