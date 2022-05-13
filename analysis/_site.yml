@@ -6,9 +6,9 @@ navbar:
   - text: home
     href: /
   - text: projects
-    href: /projects
+    href: /projects/
   - text: thoughts
-    href: /blog
+    href: /blog/
   # - text: license
   #   href: license.html
 output:
