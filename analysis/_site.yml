@@ -6,9 +6,9 @@ navbar:
   - text: home
     href: /
   - text: projects
-    href: ../../temipete.github.io/projects
+    href: /projects
   - text: thoughts
-    href: ../../temipete.github.io/blog
+    href: /blog
   # - text: license
   #   href: license.html
 output:
