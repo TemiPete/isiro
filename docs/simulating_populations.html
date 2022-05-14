@@ -365,7 +365,7 @@ populations</h1>
 <p>
 <button type="button" class="btn btn-default btn-workflowr btn-workflowr-report" data-toggle="collapse" data-target="#workflowr-report">
 <span class="glyphicon glyphicon-list" aria-hidden="true"></span>
-workflowr <span class="glyphicon glyphicon-exclamation-sign text-danger"
+workflowr <span class="glyphicon glyphicon-ok text-success"
 aria-hidden="true"></span>
 </button>
 </p>
@@ -376,8 +376,8 @@ aria-hidden="true"></span>
 </li>
 <li>
 <a data-toggle="tab" href="#checks"> Checks <span
-class="glyphicon glyphicon-exclamation-sign text-danger"
-aria-hidden="true"></span> </a>
+class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span>
+</a>
 </li>
 <li>
 <a data-toggle="tab" href="#versions">Past versions</a>
@@ -386,13 +386,13 @@ aria-hidden="true"></span> </a>
 <div class="tab-content">
 <div id="summary" class="tab-pane fade in active">
 <p>
-<strong>Last updated:</strong> 2022-05-13
+<strong>Last updated:</strong> 2022-05-14
 </p>
 <p>
 <strong>Checks:</strong> <span
-class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 5
+class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 7
 <span class="glyphicon glyphicon-exclamation-sign text-danger"
-aria-hidden="true"></span> 2
+aria-hidden="true"></span> 0
 </p>
 <p>
 <strong>Knit directory:</strong> <code>isiro/</code> <span
@@ -415,21 +415,18 @@ versions</em> tab lists the development history.
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRMarkdownfilestronguncommittedchanges">
-<span class="glyphicon glyphicon-exclamation-sign text-danger"
-aria-hidden="true"></span> <strong>R Markdown file:</strong> uncommitted
-changes </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRMarkdownfilestronguptodate">
+<span class="glyphicon glyphicon-ok text-success"
+aria-hidden="true"></span> <strong>R Markdown file:</strong> up-to-date
+</a>
 </p>
 </div>
-<div id="strongRMarkdownfilestronguncommittedchanges"
+<div id="strongRMarkdownfilestronguptodate"
 class="panel-collapse collapse">
 <div class="panel-body">
-<p>The R Markdown file has unstaged changes. To know which version of
-the R Markdown file created these results, you’ll want to first commit
-it to the Git repo. If you’re still working on the analysis, you can
-ignore this warning. When you’re finished, you can run
-<code>wflow_publish</code> to commit the R Markdown file and build the
-HTML.</p>
+<p>Great! Since the R Markdown file has been committed to the Git
+repository, you know the exact version of the code that produced these
+results.</p>
 </div>
 </div>
 </div>
@@ -489,45 +486,16 @@ versions is critical for reproducibility.</p>
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongCachestrongdetected">
-<span class="glyphicon glyphicon-exclamation-sign text-danger"
-aria-hidden="true"></span> <strong>Cache:</strong> detected </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongCachestrongnone">
+<span class="glyphicon glyphicon-ok text-success"
+aria-hidden="true"></span> <strong>Cache:</strong> none </a>
 </p>
 </div>
-<div id="strongCachestrongdetected" class="panel-collapse collapse">
+<div id="strongCachestrongnone" class="panel-collapse collapse">
 <div class="panel-body">
-The following chunks had caches available:
-<ul>
-<li>
-session-info-chunk-inserted-by-workflowr
-</li>
-<li>
-unnamed-chunk-1
-</li>
-<li>
-unnamed-chunk-2
-</li>
-<li>
-unnamed-chunk-3
-</li>
-<li>
-unnamed-chunk-4
-</li>
-<li>
-unnamed-chunk-5
-</li>
-<li>
-unnamed-chunk-6
-</li>
-<li>
-unnamed-chunk-7
-</li>
-</ul>
-<p>To ensure reproducibility of the results, delete the cache directory
-<code>simulating_populations_cache</code> and re-run the analysis. To
-have workflowr automatically delete the cache directory prior to
-building the file, set <code>delete_cache = TRUE</code> when running
-<code>wflow_build()</code> or <code>wflow_publish()</code>.</p>
+<p>Nice! There were no cached chunks for this analysis, so you can be
+confident that you successfully produced the results during this
+run.</p>
 </div>
 </div>
 </div>
@@ -549,15 +517,15 @@ project makes it easier to run your code on other machines.</p>
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomtemipeteisirotree84bb38ada0619b031c5c3ef057fdd7fe6674772ctargetblank84bb38aa">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomtemipeteisirotree9b21456739137801192dce95c92d87bd9a8e861ftargetblank9b21456a">
 <span class="glyphicon glyphicon-ok text-success"
 aria-hidden="true"></span> <strong>Repository version:</strong>
-<a href="https://github.com/temipete/isiro/tree/84bb38ada0619b031c5c3ef057fdd7fe6674772c" target="_blank">84bb38a</a>
+<a href="https://github.com/temipete/isiro/tree/9b21456739137801192dce95c92d87bd9a8e861f" target="_blank">9b21456</a>
 </a>
 </p>
 </div>
 <div
-id="strongRepositoryversionstrongahrefhttpsgithubcomtemipeteisirotree84bb38ada0619b031c5c3ef057fdd7fe6674772ctargetblank84bb38aa"
+id="strongRepositoryversionstrongahrefhttpsgithubcomtemipeteisirotree9b21456739137801192dce95c92d87bd9a8e861ftargetblank9b21456a"
 class="panel-collapse collapse">
 <div class="panel-body">
 <p>
@@ -567,7 +535,7 @@ reproducibility.
 </p>
 <p>
 The results in this page were generated with repository version
-<a href="https://github.com/temipete/isiro/tree/84bb38ada0619b031c5c3ef057fdd7fe6674772c" target="_blank">84bb38a</a>.
+<a href="https://github.com/temipete/isiro/tree/9b21456739137801192dce95c92d87bd9a8e861f" target="_blank">9b21456</a>.
 See the <em>Past versions</em> tab to see a history of the changes made
 to the R Markdown and HTML files.
 </p>
@@ -583,10 +551,9 @@ were generated:
 <pre><code>
 Ignored files:
     Ignored:    .Rhistory
-    Ignored:    analysis/simulating_populations_cache/
 
 Unstaged changes:
-    Modified:   analysis/simulating_populations.Rmd
+    Deleted:    analysis/simulating_genotypes.Rmd
 
 </code></pre>
 <p>
@@ -633,6 +600,57 @@ Message
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>
+Rmd
+</td>
+<td>
+<a href="https://github.com/temipete/isiro/blob/9b21456739137801192dce95c92d87bd9a8e861f/analysis/simulating_populations.Rmd" target="_blank">9b21456</a>
+</td>
+<td>
+Temi
+</td>
+<td>
+2022-05-14
+</td>
+<td>
+workflowr::wflow_publish("../analysis/simulating_populations.Rmd")
+</td>
+</tr>
+<tr>
+<td>
+Rmd
+</td>
+<td>
+<a href="https://github.com/temipete/isiro/blob/5a67310ad6a6a7bc00d21bd05e6c005d07bc2910/analysis/simulating_populations.Rmd" target="_blank">5a67310</a>
+</td>
+<td>
+Temi
+</td>
+<td>
+2022-05-13
+</td>
+<td>
+Updated simulating genotypes html
+</td>
+</tr>
+<tr>
+<td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/temipete/isiro/5a67310ad6a6a7bc00d21bd05e6c005d07bc2910/docs/simulating_populations.html" target="_blank">5a67310</a>
+</td>
+<td>
+Temi
+</td>
+<td>
+2022-05-13
+</td>
+<td>
+Updated simulating genotypes html
+</td>
+</tr>
 <tr>
 <td>
 html
@@ -726,9 +744,9 @@ wflow_publish("./analysis/*.Rmd")
 </div>
 </div>
 <div id="im-still-working-on-this" class="section level3">
-<h3>I’m still working on this</h3>
-<pre class="r"><code>library(gtools)</code></pre>
-<pre class="r"><code>source(&#39;https://raw.githubusercontent.com/TemiPete/miscellaneous_code/main/R/misc_functions.R&#39;)</code></pre>
+<h3><strong>I’m still working on this</strong></h3>
+<pre class="r"><code>#rstudioapi::getActiveDocumentContext()$path |&gt; dirname() |&gt; setwd()
+library(gtools)</code></pre>
 </div>
 <div id="introduction" class="section level2">
 <h2>Introduction</h2>
@@ -753,6 +771,8 @@ definitions.</p>
 </div>
 <div id="code" class="section level2">
 <h2>Code</h2>
+<div id="simulating-discrete-populations" class="section level3">
+<h3>Simulating discrete populations</h3>
 <p>To simulate populations based on the definition of <span
 class="math inline">\(F_{ST}\)</span>, one thing we can do is to
 simulate an ancestral population’s allele frequencies. This is similar
@@ -761,8 +781,9 @@ descends. Afterwards, we can simulate different populations from this
 ancestral population. This follows from the <a
 href="https://en.wikipedia.org/wiki/Balding%E2%80%93Nichols_model">Balding-Nichols
 model</a>.</p>
-<p><span class="math inline">\(Beta(\frac{1-F}{F}p,
-\frac{1-F}{F}(1-p))\)</span></p>
+<p><span class="math display">\[\begin{align}
+Beta(\frac{1-F}{F}p, \frac{1-F}{F}(1-p))
+\end{align}\]</span></p>
 <p>Assume that we have 500 alleles/loci, and 4 populations, and we
 intend to simulate 1000 individuals from each of these populations. We
 can define our <span class="math inline">\(F_{ST}\)</span> to be, say,
@@ -794,6 +815,69 @@ pop4_allele_freqs &lt;- rbeta(M, shape1 = ((1-f_pop4)/f_pop4)*ancestral_allele_f
 
 all_allele_freqs &lt;- list(pop1_allele_freqs, pop2_allele_freqs, pop3_allele_freqs, pop4_allele_freqs)
 names(all_allele_freqs) &lt;- paste0(&#39;population_&#39;, 1:4)</code></pre>
+<div
+id="first-how-does-the-expected-value-of-the-distribution-of-allele-frequency-changes-as-a-factor-of-the-f_st-this-should-give-us-an-idea-of-what-to-expect-when-we-simulate-allele-frequencies."
+class="section level4">
+<h4>First, how does the expected value of the distribution of allele
+frequency changes as a factor of the <span
+class="math inline">\(F_{ST}\)</span>? This should give us an idea of
+what to expect when we simulate allele frequencies.</h4>
+<pre class="r"><code># generate many Fst values
+fst_vector &lt;- round(seq(0.01, 0.99, length.out=20), 2) # 20 fsts ranging from 0.01 to 0.99
+per_fst &lt;- lapply(fst_vector, function(each_fst){
+  
+  sh1 &lt;- ((1-each_fst)/each_fst)*ancestral_allele_freqs
+  sh2 &lt;- ((1-each_fst)/(each_fst))*(1-ancestral_allele_freqs)
+  temp_allele_frq &lt;- rbeta(M, shape1 = sh1, shape2 = sh2)
+  deviation &lt;- cor(ancestral_allele_freqs, temp_allele_frq) #|&gt; suppressWarnings()
+  return(deviation)
+})</code></pre>
+<pre class="r"><code>cor_deviation &lt;- per_fst |&gt; unlist()
+
+plot(cor_deviation, frame.plot=F, xaxt=&#39;n&#39;, yaxt=&#39;n&#39;, type=&#39;b&#39;, xlab = expression(F[ST]), ylab=expression(R^2))
+axis(1, at=rep(1:length(cor_deviation), by=1), labels = fst_vector, las=2)
+axis(2, at=seq(0, 1, 0.1))</code></pre>
+<p><img src="figure/simulating_populations.Rmd/unnamed-chunk-3-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>
+<button type="button" class="btn btn-default btn-xs btn-workflowr btn-workflowr-fig" data-toggle="collapse" data-target="#fig-unnamed-chunk-3-1">
+Past versions of unnamed-chunk-3-1.png
+</button>
+</p>
+<div id="fig-unnamed-chunk-3-1" class="collapse">
+<div class="table-responsive">
+<table class="table table-condensed table-hover">
+<thead>
+<tr>
+<th>
+Version
+</th>
+<th>
+Author
+</th>
+<th>
+Date
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<a href="https://github.com/temipete/isiro/blob/5a67310ad6a6a7bc00d21bd05e6c005d07bc2910/docs/figure/simulating_populations.Rmd/unnamed-chunk-3-1.png" target="_blank">5a67310</a>
+</td>
+<td>
+Temi
+</td>
+<td>
+2022-05-13
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>We see that as the <span class="math inline">\(F_{ST}\)</span>
+increases, the correlation between the ancestral allele frequency and
+the generated allele frequency reduces.</p>
 <pre class="r"><code>layout(matrix(c(1,2,3,4,5,6), nrow = 2, ncol = 3, byrow = T))
 names_pop &lt;- names(all_allele_freqs)
 for(i in 1:4){
@@ -801,24 +885,65 @@ for(i in 1:4){
         if(i == j){ # we don&#39;t want to plot pop1 vs pop1 e.t.c.
             next
         } else if (i &lt; j) {
-            cor_ &lt;- round(cor(all_allele_freqs[[i]], all_allele_freqs[[j]]), 2)
+            #cor_ &lt;- round(cor(all_allele_freqs[[i]], all_allele_freqs[[j]]), 2)
             plot(all_allele_freqs[[i]], all_allele_freqs[[j]], xlab = names_pop[i], ylab = names_pop[j], frame.plot = F)
-            abline(a=0, b=cor_, col=&#39;red&#39;)
-            mtext(cor_)
+            #abline(a=0, b=cor_, col=&#39;red&#39;)
+            #mtext(cor_)
         }
     }
 }
 mtext(&#39;Scatterplot of allele frequencies for each population&#39;, outer = T)</code></pre>
 <p><img src="figure/simulating_populations.Rmd/scatterplot%20allele%20frequencies-1.png" width="672" style="display: block; margin: auto;" /></p>
-<p>The plot is approximately what we expect!</p>
+<p>
+<button type="button" class="btn btn-default btn-xs btn-workflowr btn-workflowr-fig" data-toggle="collapse" data-target="#fig-no-spaces-scatterplot-allele-frequencies-1">
+Past versions of "scatterplot allele frequencies-1.png"
+</button>
+</p>
+<div id="fig-no-spaces-scatterplot-allele-frequencies-1"
+class="collapse">
+<div class="table-responsive">
+<table class="table table-condensed table-hover">
+<thead>
+<tr>
+<th>
+Version
+</th>
+<th>
+Author
+</th>
+<th>
+Date
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<a href="https://github.com/temipete/isiro/blob/5a67310ad6a6a7bc00d21bd05e6c005d07bc2910/docs/figure/simulating_populations.Rmd/scatterplot allele frequencies-1.png" target="_blank">5a67310</a>
+</td>
+<td>
+Temi
+</td>
+<td>
+2022-05-13
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>The plot is approximately (roughly?) what we expect!</p>
+</div>
+</div>
 </div>
 <div id="simulating-genotypes-using-these-allele-frequencies"
 class="section level2">
 <h2>Simulating genotypes using these allele frequencies</h2>
 <p>Given these allele frequencies, we can simulate genotypes from each
 of these populations by sampling from a binomial distribution.</p>
-<p><span class="math inline">\(G_{k_{n}} \sim Binom(n,
-p_{k})\)</span></p>
+<p><span class="math display">\[\begin{align}
+G_{k_{n}} \sim Binom(n, p_{k})
+\end{align}\]</span></p>
 <p>where <span class="math inline">\(n\)</span> is the number of
 success, and <span class="math inline">\(p\)</span> is the probability
 of a success. Here, <span class="math inline">\(n = 2\)</span> because
@@ -838,46 +963,86 @@ cat(&#39;Here is what the genotypes look like\n&#39;)</code></pre>
 <pre><code>Here is what the genotypes look like</code></pre>
 <pre class="r"><code>genotypes[1:5, 1:5]</code></pre>
 <pre><code>     [,1] [,2] [,3] [,4] [,5]
-[1,]    0    0    0    0    1
-[2,]    0    0    0    0    2
-[3,]    0    0    0    1    2
-[4,]    0    0    0    0    0
+[1,]    0    0    0    0    0
+[2,]    0    0    0    0    0
+[3,]    0    0    0    0    1
+[4,]    0    0    1    0    0
 [5,]    0    0    0    0    0</code></pre>
 <pre class="r"><code>cat(&#39;And here is what the population designation looks like \n&#39;)</code></pre>
 <pre><code>And here is what the population designation looks like </code></pre>
 <pre class="r"><code>pops[1:5]</code></pre>
-<pre><code>[1] &quot;population_1&quot; &quot;population_4&quot; &quot;population_2&quot; &quot;population_1&quot; &quot;population_4&quot;</code></pre>
+<pre><code>[1] &quot;population_1&quot; &quot;population_1&quot; &quot;population_4&quot; &quot;population_3&quot; &quot;population_1&quot;</code></pre>
 <p>Next, we can calculate the principal components (PCs) of this data,
 and plot PC1 vs PC2, to see where the most variability lies in the
 data</p>
 <pre class="r"><code># first change the row names of the genotype data to reflect the populations
-rownames(genotypes) &lt;- pops
+#rownames(genotypes) &lt;- pops
 # I need to make sure that there are some variations in the SNPS - if there aren&#39;t any, I should remove them
 pca_genotypes &lt;- genotypes[ , which(apply(genotypes, 2, var) != 0)]
 # PCA
 pca_dt &lt;- prcomp(pca_genotypes, scale.=T, center=T)
 pca_dt$x[1:5, 1:5]</code></pre>
-<pre><code>                    PC1        PC2         PC3         PC4         PC5
-population_1   3.365441 -3.5048602  6.53058793  3.64826678 -1.55650504
-population_4 -12.673512  0.4779913 -0.01039136 -0.82388450 -0.02560419
-population_2   3.934678 -3.3804340 -5.75174919  0.04647499 -0.63133432
-population_1   3.557170 -5.6361956  5.75008629  0.91973143 -1.34829976
-population_4 -13.115938 -0.2937992 -0.22428779  0.17730445 -1.79836083</code></pre>
+<pre><code>            PC1        PC2       PC3        PC4        PC5
+[1,]   5.183996  6.3621456 6.0856746 -0.7488554  1.9273843
+[2,]   4.309809  5.6851396 8.3955066 -0.3846691 -1.7150951
+[3,] -12.641178 -0.4642504 0.1245686 -0.4718259  0.6961856
+[4,]   4.457872 -9.3557469 0.4182516 -1.3360993 -0.3019002
+[5,]   4.287312  2.6758300 5.4800499  2.1085708 -1.8592403</code></pre>
 <pre class="r"><code># colors
 mycolors &lt;- colorRampPalette(RColorBrewer::brewer.pal(8, &quot;Dark2&quot;))(n_pops)
 #mycolors &lt;- c(&#39;red&#39;, &#39;orange&#39;, &#39;green&#39;, &#39;blue&#39;)
-color_coding &lt;- factor(rownames(pca_dt$x), labels = mycolors)
+color_coding &lt;- factor(pops, labels = mycolors)
 plot(pca_dt$x[, &#39;PC1&#39;], pca_dt$x[, &#39;PC2&#39;], bg=as.character(color_coding), xlab = &#39;PC1&#39;, ylab = &#39;PC2&#39;, frame.plot = F, pch=21, main=&#39;PC1 vs PC2 of 4 discrete populations&#39;)
 legend(&#39;topleft&#39;, legend=names_pop, pch=c(21, 21, 21, 21), pt.bg=mycolors, bty = &#39;n&#39;, xpd=NA)</code></pre>
-<p><img src="figure/simulating_populations.Rmd/unnamed-chunk-6-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="figure/simulating_populations.Rmd/unnamed-chunk-5-1.png" width="672" style="display: block; margin: auto;" /></p>
 <p>We can look at populations 1 and 2 only, and see if there is any
 difference between them.</p>
-<pre class="r"><code>pca_12 &lt;- pca_dt$x[rownames(pca_dt$x) %in% c(&#39;population_1&#39;, &#39;population_2&#39;), ]
-plot(pca_12[, &#39;PC1&#39;], pca_12[, &#39;PC2&#39;], col=rownames(pca_12) |&gt; as.factor(), bg=rownames(pca_12) |&gt; as.factor(), xlab = &#39;PC1&#39;, ylab = &#39;PC2&#39;, frame.plot = F, pch=19)</code></pre>
-<p><img src="figure/simulating_populations.Rmd/unnamed-chunk-7-1.png" width="672" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>pop_names &lt;- c(&#39;population_1&#39;, &#39;population_2&#39;)
+idx &lt;- which(pops %in% pop_names)
+pca_12 &lt;- pca_dt$x[idx, ]
+color_coding &lt;- factor(pops[idx], labels = mycolors[1:2])
+plot(pca_12[, &#39;PC1&#39;], pca_12[, &#39;PC2&#39;], bg=as.character(color_coding), xlab = &#39;PC1&#39;, ylab = &#39;PC2&#39;, frame.plot = F, pch=21, main=&#39;PC1 vs PC2 of the 2 similar populations 1 and 2&#39;)
+legend(&#39;topleft&#39;, legend=pop_names, pch=c(21, 21), pt.bg=mycolors[1:2], bty = &#39;n&#39;, xpd=NA)</code></pre>
+<p><img src="figure/simulating_populations.Rmd/unnamed-chunk-6-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>
+<button type="button" class="btn btn-default btn-xs btn-workflowr btn-workflowr-fig" data-toggle="collapse" data-target="#fig-unnamed-chunk-6-1">
+Past versions of unnamed-chunk-6-1.png
+</button>
+</p>
+<div id="fig-unnamed-chunk-6-1" class="collapse">
+<div class="table-responsive">
+<table class="table table-condensed table-hover">
+<thead>
+<tr>
+<th>
+Version
+</th>
+<th>
+Author
+</th>
+<th>
+Date
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<a href="https://github.com/temipete/isiro/blob/5a67310ad6a6a7bc00d21bd05e6c005d07bc2910/docs/figure/simulating_populations.Rmd/unnamed-chunk-6-1.png" target="_blank">5a67310</a>
+</td>
+<td>
+Temi
+</td>
+<td>
+2022-05-13
+</td>
+</tr>
+</tbody>
+</table>
 </div>
-<div id="simulating-continuous-populations" class="section level2">
-<h2>Simulating continuous populations</h2>
+</div>
+<div id="simulating-continuous-populations" class="section level3">
+<h3>Simulating continuous populations</h3>
 <p>What I have done so far, is to simulate a discrete population of
 individuals. Think of it as people living in Mars, Earth, and Jupiter,
 and who have never intermingled since time immemorial. Population 3 is
@@ -890,7 +1055,9 @@ class="math inline">\(m\)</span>. In other words, I am trying to
 estimate what percentage of an individual’s alleles might have come from
 a certain population <span class="math inline">\(m\)</span>. I will call
 this random variable, <span class="math inline">\(Q\)</span>.</p>
-<p><span class="math inline">\(Q \sim Dirichlet(\alpha)\)</span></p>
+<p><span class="math display">\[\begin{align}
+Q \sim Dirichlet(\alpha)
+\end{align}\]</span></p>
 <p>A trick I can use is to take an individual, ask how much of their
 genome is shared among each population I have, select that proportion of
 allele frequencies, and simulate their genotypes based on the selection
@@ -917,9 +1084,9 @@ individual</p>
 id1 &lt;- q_matrix[1, ]
 q_counts &lt;- floor(id1 * M) # number of loci shared
 q_counts</code></pre>
-<pre><code>[1]   0 273 101 124</code></pre>
-<p>The assumption here is that this individual shares 0 loci with
-population 1, 273 with population 2, 101 with population 3, and 124 loci
+<pre><code>[1]   1 273 224   0</code></pre>
+<p>The assumption here is that this individual shares 1 loci with
+population 1, 273 with population 2, 224 with population 3, and 0 loci
 with population 4, and 3 independent loci not share with any population.
 The sum is 498 (because I rounded down), but I don’t want this to be
 this case. Therefore, I will share the remaining loci with the highest
@@ -927,7 +1094,7 @@ number already available, so that the sum is 500.</p>
 <pre class="r"><code>remainder_ &lt;- M - sum(q_counts)
 q_counts[which.max(q_counts)] &lt;- q_counts[which.max(q_counts)] + remainder_
 q_counts</code></pre>
-<pre><code>[1]   0 275 101 124</code></pre>
+<pre><code>[1]   1 275 224   0</code></pre>
 <p>Now, this sums to 500.</p>
 <p>Putting this into a reusable function…</p>
 <pre class="r"><code>q_counts_fxn &lt;- function(q_matrix, M){
@@ -942,11 +1109,11 @@ q_counts</code></pre>
 q_counts &lt;- q_counts_fxn(q_matrix, M)
 q_counts[1:5, ] # for the first 5 individuals</code></pre>
 <pre><code>     [,1] [,2] [,3] [,4]
-[1,]    0  275  101  124
-[2,]   28  472    0    0
-[3,]  373    0   70   57
-[4,]  495    0    3    2
-[5,]  130  197    1  172</code></pre>
+[1,]    1  275  224    0
+[2,]   71    0   15  414
+[3,]   31    0   11  458
+[4,]  423    1   76    0
+[5,]  345    0  111   44</code></pre>
 <pre class="r"><code>genotypes &lt;- matrix(NA, nrow = N*n_pops, ncol = M) # remember, N individuals per population
 
 for(q in 1:nrow(q_counts)){
@@ -987,17 +1154,55 @@ pca_genotypes &lt;- genotypes[ , which(apply(genotypes, 2, var) != 0)]
 # PCA
 pca_dt &lt;- prcomp(pca_genotypes, scale.=T, center=T)
 pca_dt$x[1:5, 1:5]</code></pre>
-<pre><code>                    PC1        PC2       PC3        PC4         PC5
-population_2  0.6843511  0.7775393 -1.986994 -0.5733985  1.35030907
-population_2  5.2284319 -4.4591500 -5.521154  1.0043617 -0.98073989
-population_1  1.2348129 -0.8818382  4.936476  0.7053044 -0.35913221
-population_1  3.5599093 -3.7287330  5.498686 -4.3138313  0.46221479
-population_2 -1.7057116 -2.4540082 -1.934744  0.7724849 -0.06324158</code></pre>
+<pre><code>                   PC1        PC2       PC3         PC4        PC5
+population_2  3.196097  1.6496822 -2.377020 -2.14073035 -1.3335386
+population_4 -8.395439 -0.4679686  1.367845  0.32996021  0.5506388
+population_4 -9.984623  1.9433642 -1.464607  0.19760368  0.1990272
+population_1  6.413411 -3.2464735  5.993945  0.60065559 -0.1525360
+population_1  2.550438 -1.5144697  5.600438  0.07491937 -2.6760314</code></pre>
 <pre class="r"><code>mycolors &lt;- colorRampPalette(RColorBrewer::brewer.pal(8, &quot;Dark2&quot;))(n_pops)
 color_coding &lt;- factor(rownames(pca_dt$x), labels = mycolors)
 plot(pca_dt$x[, &#39;PC1&#39;], pca_dt$x[, &#39;PC2&#39;], bg=color_coding |&gt; as.character(), xlab = &#39;PC1&#39;, ylab = &#39;PC2&#39;, frame.plot = F, pch=21, main=&#39;PC1 vs PC2 of 4 continuous populations&#39;)
 legend(&#39;topleft&#39;, legend=names_pop, pch=c(21, 21, 21, 21), pt.bg=mycolors, bty = &#39;n&#39;, xpd = NA)</code></pre>
 <p><img src="figure/simulating_populations.Rmd/plotting%20continuous%20population-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>
+<button type="button" class="btn btn-default btn-xs btn-workflowr btn-workflowr-fig" data-toggle="collapse" data-target="#fig-no-spaces-plotting-continuous-population-1">
+Past versions of "plotting continuous population-1.png"
+</button>
+</p>
+<div id="fig-no-spaces-plotting-continuous-population-1"
+class="collapse">
+<div class="table-responsive">
+<table class="table table-condensed table-hover">
+<thead>
+<tr>
+<th>
+Version
+</th>
+<th>
+Author
+</th>
+<th>
+Date
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<a href="https://github.com/temipete/isiro/blob/5a67310ad6a6a7bc00d21bd05e6c005d07bc2910/docs/figure/simulating_populations.Rmd/plotting continuous population-1.png" target="_blank">5a67310</a>
+</td>
+<td>
+Temi
+</td>
+<td>
+2022-05-13
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 <br>
 <p>
 <button type="button" class="btn btn-default btn-workflowr btn-workflowr-sessioninfo" data-toggle="collapse" data-target="#workflowr-sessioninfo" style="display: block;">
@@ -1041,6 +1246,7 @@ loaded via a namespace (and not attached):
 [33] rmarkdown_2.14     magrittr_2.0.3     whisker_0.4        promises_1.2.0.1  
 [37] ellipsis_0.3.2     htmltools_0.5.2    httpuv_1.6.5       utf8_1.2.2        
 [41] stringi_1.7.6      crayon_1.5.1      </code></pre>
+</div>
 </div>
 </div>
 
