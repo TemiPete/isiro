@@ -517,15 +517,15 @@ project makes it easier to run your code on other machines.</p>
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomtemipeteisirotree9b21456739137801192dce95c92d87bd9a8e861ftargetblank9b21456a">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomtemipeteisirotree6c14148b7cccdf738b9af3da1b4739399da5e13ctargetblank6c14148a">
 <span class="glyphicon glyphicon-ok text-success"
 aria-hidden="true"></span> <strong>Repository version:</strong>
-<a href="https://github.com/temipete/isiro/tree/9b21456739137801192dce95c92d87bd9a8e861f" target="_blank">9b21456</a>
+<a href="https://github.com/temipete/isiro/tree/6c14148b7cccdf738b9af3da1b4739399da5e13c" target="_blank">6c14148</a>
 </a>
 </p>
 </div>
 <div
-id="strongRepositoryversionstrongahrefhttpsgithubcomtemipeteisirotree9b21456739137801192dce95c92d87bd9a8e861ftargetblank9b21456a"
+id="strongRepositoryversionstrongahrefhttpsgithubcomtemipeteisirotree6c14148b7cccdf738b9af3da1b4739399da5e13ctargetblank6c14148a"
 class="panel-collapse collapse">
 <div class="panel-body">
 <p>
@@ -535,7 +535,7 @@ reproducibility.
 </p>
 <p>
 The results in this page were generated with repository version
-<a href="https://github.com/temipete/isiro/tree/9b21456739137801192dce95c92d87bd9a8e861f" target="_blank">9b21456</a>.
+<a href="https://github.com/temipete/isiro/tree/6c14148b7cccdf738b9af3da1b4739399da5e13c" target="_blank">6c14148</a>.
 See the <em>Past versions</em> tab to see a history of the changes made
 to the R Markdown and HTML files.
 </p>
@@ -600,6 +600,40 @@ Message
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>
+Rmd
+</td>
+<td>
+<a href="https://github.com/temipete/isiro/blob/6c14148b7cccdf738b9af3da1b4739399da5e13c/analysis/simulating_populations.Rmd" target="_blank">6c14148</a>
+</td>
+<td>
+Temi
+</td>
+<td>
+2022-05-14
+</td>
+<td>
+workflowr::wflow_publish("../analysis/simulating_populations.Rmd")
+</td>
+</tr>
+<tr>
+<td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/temipete/isiro/73bd033dab7415b266e387018c4b0e7b39b34ed8/docs/simulating_populations.html" target="_blank">73bd033</a>
+</td>
+<td>
+Temi
+</td>
+<td>
+2022-05-14
+</td>
+<td>
+Build site.
+</td>
+</tr>
 <tr>
 <td>
 Rmd
@@ -745,8 +779,8 @@ wflow_publish("./analysis/*.Rmd")
 </div>
 <div id="im-still-working-on-this" class="section level3">
 <h3><strong>I’m still working on this</strong></h3>
-<pre class="r"><code>#rstudioapi::getActiveDocumentContext()$path |&gt; dirname() |&gt; setwd()
-library(gtools)</code></pre>
+<pre class="r"><code>rstudioapi::getActiveDocumentContext()$path |&gt; dirname() |&gt; setwd()</code></pre>
+<pre class="r"><code>library(gtools)</code></pre>
 </div>
 <div id="introduction" class="section level2">
 <h2>Introduction</h2>
@@ -837,13 +871,13 @@ per_fst &lt;- lapply(fst_vector, function(each_fst){
 plot(cor_deviation, frame.plot=F, xaxt=&#39;n&#39;, yaxt=&#39;n&#39;, type=&#39;b&#39;, xlab = expression(F[ST]), ylab=expression(R^2))
 axis(1, at=rep(1:length(cor_deviation), by=1), labels = fst_vector, las=2)
 axis(2, at=seq(0, 1, 0.1))</code></pre>
-<p><img src="figure/simulating_populations.Rmd/unnamed-chunk-3-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="figure/simulating_populations.Rmd/unnamed-chunk-4-1.png" width="672" style="display: block; margin: auto;" /></p>
 <p>
-<button type="button" class="btn btn-default btn-xs btn-workflowr btn-workflowr-fig" data-toggle="collapse" data-target="#fig-unnamed-chunk-3-1">
-Past versions of unnamed-chunk-3-1.png
+<button type="button" class="btn btn-default btn-xs btn-workflowr btn-workflowr-fig" data-toggle="collapse" data-target="#fig-unnamed-chunk-4-1">
+Past versions of unnamed-chunk-4-1.png
 </button>
 </p>
-<div id="fig-unnamed-chunk-3-1" class="collapse">
+<div id="fig-unnamed-chunk-4-1" class="collapse">
 <div class="table-responsive">
 <table class="table table-condensed table-hover">
 <thead>
@@ -862,7 +896,18 @@ Date
 <tbody>
 <tr>
 <td>
-<a href="https://github.com/temipete/isiro/blob/5a67310ad6a6a7bc00d21bd05e6c005d07bc2910/docs/figure/simulating_populations.Rmd/unnamed-chunk-3-1.png" target="_blank">5a67310</a>
+<a href="https://github.com/temipete/isiro/blob/73bd033dab7415b266e387018c4b0e7b39b34ed8/docs/figure/simulating_populations.Rmd/unnamed-chunk-4-1.png" target="_blank">73bd033</a>
+</td>
+<td>
+Temi
+</td>
+<td>
+2022-05-14
+</td>
+</tr>
+<tr>
+<td>
+<a href="https://github.com/temipete/isiro/blob/5a67310ad6a6a7bc00d21bd05e6c005d07bc2910/docs/figure/simulating_populations.Rmd/unnamed-chunk-4-1.png" target="_blank">5a67310</a>
 </td>
 <td>
 Temi
@@ -917,6 +962,17 @@ Date
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>
+<a href="https://github.com/temipete/isiro/blob/73bd033dab7415b266e387018c4b0e7b39b34ed8/docs/figure/simulating_populations.Rmd/scatterplot allele frequencies-1.png" target="_blank">73bd033</a>
+</td>
+<td>
+Temi
+</td>
+<td>
+2022-05-14
+</td>
+</tr>
 <tr>
 <td>
 <a href="https://github.com/temipete/isiro/blob/5a67310ad6a6a7bc00d21bd05e6c005d07bc2910/docs/figure/simulating_populations.Rmd/scatterplot allele frequencies-1.png" target="_blank">5a67310</a>
@@ -994,15 +1050,6 @@ mycolors &lt;- colorRampPalette(RColorBrewer::brewer.pal(8, &quot;Dark2&quot;))(
 color_coding &lt;- factor(pops, labels = mycolors)
 plot(pca_dt$x[, &#39;PC1&#39;], pca_dt$x[, &#39;PC2&#39;], bg=as.character(color_coding), xlab = &#39;PC1&#39;, ylab = &#39;PC2&#39;, frame.plot = F, pch=21, main=&#39;PC1 vs PC2 of 4 discrete populations&#39;)
 legend(&#39;topleft&#39;, legend=names_pop, pch=c(21, 21, 21, 21), pt.bg=mycolors, bty = &#39;n&#39;, xpd=NA)</code></pre>
-<p><img src="figure/simulating_populations.Rmd/unnamed-chunk-5-1.png" width="672" style="display: block; margin: auto;" /></p>
-<p>We can look at populations 1 and 2 only, and see if there is any
-difference between them.</p>
-<pre class="r"><code>pop_names &lt;- c(&#39;population_1&#39;, &#39;population_2&#39;)
-idx &lt;- which(pops %in% pop_names)
-pca_12 &lt;- pca_dt$x[idx, ]
-color_coding &lt;- factor(pops[idx], labels = mycolors[1:2])
-plot(pca_12[, &#39;PC1&#39;], pca_12[, &#39;PC2&#39;], bg=as.character(color_coding), xlab = &#39;PC1&#39;, ylab = &#39;PC2&#39;, frame.plot = F, pch=21, main=&#39;PC1 vs PC2 of the 2 similar populations 1 and 2&#39;)
-legend(&#39;topleft&#39;, legend=pop_names, pch=c(21, 21), pt.bg=mycolors[1:2], bty = &#39;n&#39;, xpd=NA)</code></pre>
 <p><img src="figure/simulating_populations.Rmd/unnamed-chunk-6-1.png" width="672" style="display: block; margin: auto;" /></p>
 <p>
 <button type="button" class="btn btn-default btn-xs btn-workflowr btn-workflowr-fig" data-toggle="collapse" data-target="#fig-unnamed-chunk-6-1">
@@ -1028,7 +1075,75 @@ Date
 <tbody>
 <tr>
 <td>
+<a href="https://github.com/temipete/isiro/blob/73bd033dab7415b266e387018c4b0e7b39b34ed8/docs/figure/simulating_populations.Rmd/unnamed-chunk-6-1.png" target="_blank">73bd033</a>
+</td>
+<td>
+Temi
+</td>
+<td>
+2022-05-14
+</td>
+</tr>
+<tr>
+<td>
 <a href="https://github.com/temipete/isiro/blob/5a67310ad6a6a7bc00d21bd05e6c005d07bc2910/docs/figure/simulating_populations.Rmd/unnamed-chunk-6-1.png" target="_blank">5a67310</a>
+</td>
+<td>
+Temi
+</td>
+<td>
+2022-05-13
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>We can look at populations 1 and 2 only, and see if there is any
+difference between them.</p>
+<pre class="r"><code>pop_names &lt;- c(&#39;population_1&#39;, &#39;population_2&#39;)
+idx &lt;- which(pops %in% pop_names)
+pca_12 &lt;- pca_dt$x[idx, ]
+color_coding &lt;- factor(pops[idx], labels = mycolors[1:2])
+plot(pca_12[, &#39;PC1&#39;], pca_12[, &#39;PC2&#39;], bg=as.character(color_coding), xlab = &#39;PC1&#39;, ylab = &#39;PC2&#39;, frame.plot = F, pch=21, main=&#39;PC1 vs PC2 of the 2 similar populations 1 and 2&#39;)
+legend(&#39;topleft&#39;, legend=pop_names, pch=c(21, 21), pt.bg=mycolors[1:2], bty = &#39;n&#39;, xpd=NA)</code></pre>
+<p><img src="figure/simulating_populations.Rmd/unnamed-chunk-7-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>
+<button type="button" class="btn btn-default btn-xs btn-workflowr btn-workflowr-fig" data-toggle="collapse" data-target="#fig-unnamed-chunk-7-1">
+Past versions of unnamed-chunk-7-1.png
+</button>
+</p>
+<div id="fig-unnamed-chunk-7-1" class="collapse">
+<div class="table-responsive">
+<table class="table table-condensed table-hover">
+<thead>
+<tr>
+<th>
+Version
+</th>
+<th>
+Author
+</th>
+<th>
+Date
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<a href="https://github.com/temipete/isiro/blob/73bd033dab7415b266e387018c4b0e7b39b34ed8/docs/figure/simulating_populations.Rmd/unnamed-chunk-7-1.png" target="_blank">73bd033</a>
+</td>
+<td>
+Temi
+</td>
+<td>
+2022-05-14
+</td>
+</tr>
+<tr>
+<td>
+<a href="https://github.com/temipete/isiro/blob/5a67310ad6a6a7bc00d21bd05e6c005d07bc2910/docs/figure/simulating_populations.Rmd/unnamed-chunk-7-1.png" target="_blank">5a67310</a>
 </td>
 <td>
 Temi
@@ -1188,6 +1303,17 @@ Date
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>
+<a href="https://github.com/temipete/isiro/blob/73bd033dab7415b266e387018c4b0e7b39b34ed8/docs/figure/simulating_populations.Rmd/plotting continuous population-1.png" target="_blank">73bd033</a>
+</td>
+<td>
+Temi
+</td>
+<td>
+2022-05-14
+</td>
+</tr>
 <tr>
 <td>
 <a href="https://github.com/temipete/isiro/blob/5a67310ad6a6a7bc00d21bd05e6c005d07bc2910/docs/figure/simulating_populations.Rmd/plotting continuous population-1.png" target="_blank">5a67310</a>
