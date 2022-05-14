@@ -9,8 +9,12 @@ editor_options:
 
 ### **I'm still working on this**
 
+
+```{r eval=F}
+rstudioapi::getActiveDocumentContext()$path |> dirname() |> setwd()
+```
+
 ```{r load libraries}
-#rstudioapi::getActiveDocumentContext()$path |> dirname() |> setwd()
 library(gtools)
 ```
 
