@@ -365,7 +365,7 @@ populations</h1>
 <p>
 <button type="button" class="btn btn-default btn-workflowr btn-workflowr-report" data-toggle="collapse" data-target="#workflowr-report">
 <span class="glyphicon glyphicon-list" aria-hidden="true"></span>
-workflowr <span class="glyphicon glyphicon-ok text-success"
+workflowr <span class="glyphicon glyphicon-exclamation-sign text-danger"
 aria-hidden="true"></span>
 </button>
 </p>
@@ -376,8 +376,8 @@ aria-hidden="true"></span>
 </li>
 <li>
 <a data-toggle="tab" href="#checks"> Checks <span
-class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span>
-</a>
+class="glyphicon glyphicon-exclamation-sign text-danger"
+aria-hidden="true"></span> </a>
 </li>
 <li>
 <a data-toggle="tab" href="#versions">Past versions</a>
@@ -390,9 +390,9 @@ class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span>
 </p>
 <p>
 <strong>Checks:</strong> <span
-class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 7
+class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 5
 <span class="glyphicon glyphicon-exclamation-sign text-danger"
-aria-hidden="true"></span> 0
+aria-hidden="true"></span> 2
 </p>
 <p>
 <strong>Knit directory:</strong> <code>isiro/</code> <span
@@ -415,18 +415,21 @@ versions</em> tab lists the development history.
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRMarkdownfilestronguptodate">
-<span class="glyphicon glyphicon-ok text-success"
-aria-hidden="true"></span> <strong>R Markdown file:</strong> up-to-date
-</a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRMarkdownfilestronguncommittedchanges">
+<span class="glyphicon glyphicon-exclamation-sign text-danger"
+aria-hidden="true"></span> <strong>R Markdown file:</strong> uncommitted
+changes </a>
 </p>
 </div>
-<div id="strongRMarkdownfilestronguptodate"
+<div id="strongRMarkdownfilestronguncommittedchanges"
 class="panel-collapse collapse">
 <div class="panel-body">
-<p>Great! Since the R Markdown file has been committed to the Git
-repository, you know the exact version of the code that produced these
-results.</p>
+<p>The R Markdown file has unstaged changes. To know which version of
+the R Markdown file created these results, you’ll want to first commit
+it to the Git repo. If you’re still working on the analysis, you can
+ignore this warning. When you’re finished, you can run
+<code>wflow_publish</code> to commit the R Markdown file and build the
+HTML.</p>
 </div>
 </div>
 </div>
@@ -486,16 +489,45 @@ versions is critical for reproducibility.</p>
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongCachestrongnone">
-<span class="glyphicon glyphicon-ok text-success"
-aria-hidden="true"></span> <strong>Cache:</strong> none </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongCachestrongdetected">
+<span class="glyphicon glyphicon-exclamation-sign text-danger"
+aria-hidden="true"></span> <strong>Cache:</strong> detected </a>
 </p>
 </div>
-<div id="strongCachestrongnone" class="panel-collapse collapse">
+<div id="strongCachestrongdetected" class="panel-collapse collapse">
 <div class="panel-body">
-<p>Nice! There were no cached chunks for this analysis, so you can be
-confident that you successfully produced the results during this
-run.</p>
+The following chunks had caches available:
+<ul>
+<li>
+session-info-chunk-inserted-by-workflowr
+</li>
+<li>
+unnamed-chunk-1
+</li>
+<li>
+unnamed-chunk-2
+</li>
+<li>
+unnamed-chunk-3
+</li>
+<li>
+unnamed-chunk-4
+</li>
+<li>
+unnamed-chunk-5
+</li>
+<li>
+unnamed-chunk-6
+</li>
+<li>
+unnamed-chunk-7
+</li>
+</ul>
+<p>To ensure reproducibility of the results, delete the cache directory
+<code>simulating_populations_cache</code> and re-run the analysis. To
+have workflowr automatically delete the cache directory prior to
+building the file, set <code>delete_cache = TRUE</code> when running
+<code>wflow_build()</code> or <code>wflow_publish()</code>.</p>
 </div>
 </div>
 </div>
@@ -517,15 +549,15 @@ project makes it easier to run your code on other machines.</p>
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomtemipeteisirotree05f359b65aefe45d79d7eb64c62af43bd7e918e1targetblank05f359ba">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomtemipeteisirotree84bb38ada0619b031c5c3ef057fdd7fe6674772ctargetblank84bb38aa">
 <span class="glyphicon glyphicon-ok text-success"
 aria-hidden="true"></span> <strong>Repository version:</strong>
-<a href="https://github.com/temipete/isiro/tree/05f359b65aefe45d79d7eb64c62af43bd7e918e1" target="_blank">05f359b</a>
+<a href="https://github.com/temipete/isiro/tree/84bb38ada0619b031c5c3ef057fdd7fe6674772c" target="_blank">84bb38a</a>
 </a>
 </p>
 </div>
 <div
-id="strongRepositoryversionstrongahrefhttpsgithubcomtemipeteisirotree05f359b65aefe45d79d7eb64c62af43bd7e918e1targetblank05f359ba"
+id="strongRepositoryversionstrongahrefhttpsgithubcomtemipeteisirotree84bb38ada0619b031c5c3ef057fdd7fe6674772ctargetblank84bb38aa"
 class="panel-collapse collapse">
 <div class="panel-body">
 <p>
@@ -535,7 +567,7 @@ reproducibility.
 </p>
 <p>
 The results in this page were generated with repository version
-<a href="https://github.com/temipete/isiro/tree/05f359b65aefe45d79d7eb64c62af43bd7e918e1" target="_blank">05f359b</a>.
+<a href="https://github.com/temipete/isiro/tree/84bb38ada0619b031c5c3ef057fdd7fe6674772c" target="_blank">84bb38a</a>.
 See the <em>Past versions</em> tab to see a history of the changes made
 to the R Markdown and HTML files.
 </p>
@@ -551,9 +583,10 @@ were generated:
 <pre><code>
 Ignored files:
     Ignored:    .Rhistory
+    Ignored:    analysis/simulating_populations_cache/
 
-Untracked files:
-    Untracked:  analysis/covid19Scrapper.Rmd
+Unstaged changes:
+    Modified:   analysis/simulating_populations.Rmd
 
 </code></pre>
 <p>
@@ -600,6 +633,23 @@ Message
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/temipete/isiro/84bb38ada0619b031c5c3ef057fdd7fe6674772c/docs/simulating_populations.html" target="_blank">84bb38a</a>
+</td>
+<td>
+Temi
+</td>
+<td>
+2022-05-13
+</td>
+<td>
+Updated website
+</td>
+</tr>
 <tr>
 <td>
 html
@@ -675,13 +725,279 @@ wflow_publish("./analysis/*.Rmd")
 </div>
 </div>
 </div>
+<div id="im-still-working-on-this" class="section level3">
+<h3>I’m still working on this</h3>
+<pre class="r"><code>library(gtools)</code></pre>
+<pre class="r"><code>source(&#39;https://raw.githubusercontent.com/TemiPete/miscellaneous_code/main/R/misc_functions.R&#39;)</code></pre>
+</div>
 <div id="introduction" class="section level2">
 <h2>Introduction</h2>
 <p>Oftentimes, we want to simulate populations in order to do some
-analysis.</p>
-<p>Before simulating, we need to know what a population is. In genetics,
-a population is some differences in allele frequencies between groups of
-people.</p>
+analysis. In this demo, I go over a, perhaps, crude way to mimic
+discrete and continuous populations. Before simulating, we need to know
+what a population is. In genetics, a population is a grouping of
+individuals based on some similarity in allele frequencies between them.
+Of course, there are many other definitions of what a population is. In
+this demo, I will use the definition based on allele frequencies.</p>
+<p>One way to generate allele frequencies that mimic that seen in
+typical populations is to use the <span
+class="math inline">\(F_{ST}\)</span>, AKA the fixation index, AKA
+F-statistic. <span class="math inline">\(F_{ST}\)</span> measures
+population differentiation as a result of genetic structure. Values
+range between 0 and 1, and higher values mean that two populations are
+highly similar. There are many definitions of <span
+class="math inline">\(F_{ST}\)</span>, depending on what you are
+discussing - and I am still learning about most of them. In this case,
+however, I am primarily concerned with allele frequency-related
+definitions.</p>
+</div>
+<div id="code" class="section level2">
+<h2>Code</h2>
+<p>To simulate populations based on the definition of <span
+class="math inline">\(F_{ST}\)</span>, one thing we can do is to
+simulate an ancestral population’s allele frequencies. This is similar
+to having a founder population from which every other population
+descends. Afterwards, we can simulate different populations from this
+ancestral population. This follows from the <a
+href="https://en.wikipedia.org/wiki/Balding%E2%80%93Nichols_model">Balding-Nichols
+model</a>.</p>
+<p><span class="math inline">\(Beta(\frac{1-F}{F}p,
+\frac{1-F}{F}(1-p))\)</span></p>
+<p>Assume that we have 500 alleles/loci, and 4 populations, and we
+intend to simulate 1000 individuals from each of these populations. We
+can define our <span class="math inline">\(F_{ST}\)</span> to be, say,
+0.09 between populations 1 and 2, 0.19 between populations 1 and 2, and
+population 3, and 0.4 between all these populations, and population 4.
+Therefore, populations 1 and 2 will be closely related, and different
+from population 3, and all of them will be different from population
+4.</p>
+<pre class="r"><code>M &lt;- 500 # number of alleles or SNPs
+n_pops &lt;- 4 # number of populations
+N &lt;- 1000 # 20 individuals in each n_pops
+f_pop12 &lt;- 0.09
+f_pop3 &lt;- 0.19 # a third, distant, unrelated population
+f_pop4 &lt;- 0.4 # a fourth population</code></pre>
+<p>When we make plots of the allele frequencies of these populations, we
+expect high correlations between populations 1 and 2, and not-so-high
+correlations when we compare with the other populations 3 and 4.</p>
+<p>We can generate some random minor allele frequencies (MAFs) to be the
+ancestral allele frequencies, and generate independent draws from the
+distribution of the ancestral allele frequencies, based on the equation
+above.</p>
+<pre class="r"><code>ancestral_allele_freqs &lt;- runif(M, 0.01, 0.5)
+sh1 &lt;- ((1-f_pop12)/f_pop12)*ancestral_allele_freqs
+sh2 &lt;- ((1-f_pop12)/(f_pop12))*(1-ancestral_allele_freqs)
+pop1_allele_freqs &lt;- rbeta(M, shape1 = sh1, shape2 = sh2)
+pop2_allele_freqs &lt;- rbeta(M, shape1 = sh1, shape2 = sh2)
+pop3_allele_freqs &lt;- rbeta(M, shape1 = ((1-f_pop3)/f_pop3)*ancestral_allele_freqs, shape2=((1-f_pop3)/(f_pop3))*(1-ancestral_allele_freqs))
+pop4_allele_freqs &lt;- rbeta(M, shape1 = ((1-f_pop4)/f_pop4)*ancestral_allele_freqs, shape2=((1-f_pop4)/(f_pop4))*(1-ancestral_allele_freqs))
+
+all_allele_freqs &lt;- list(pop1_allele_freqs, pop2_allele_freqs, pop3_allele_freqs, pop4_allele_freqs)
+names(all_allele_freqs) &lt;- paste0(&#39;population_&#39;, 1:4)</code></pre>
+<pre class="r"><code>layout(matrix(c(1,2,3,4,5,6), nrow = 2, ncol = 3, byrow = T))
+names_pop &lt;- names(all_allele_freqs)
+for(i in 1:4){
+    for(j in 1:4){
+        if(i == j){ # we don&#39;t want to plot pop1 vs pop1 e.t.c.
+            next
+        } else if (i &lt; j) {
+            cor_ &lt;- round(cor(all_allele_freqs[[i]], all_allele_freqs[[j]]), 2)
+            plot(all_allele_freqs[[i]], all_allele_freqs[[j]], xlab = names_pop[i], ylab = names_pop[j], frame.plot = F)
+            abline(a=0, b=cor_, col=&#39;red&#39;)
+            mtext(cor_)
+        }
+    }
+}
+mtext(&#39;Scatterplot of allele frequencies for each population&#39;, outer = T)</code></pre>
+<p><img src="figure/simulating_populations.Rmd/scatterplot%20allele%20frequencies-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>The plot is approximately what we expect!</p>
+</div>
+<div id="simulating-genotypes-using-these-allele-frequencies"
+class="section level2">
+<h2>Simulating genotypes using these allele frequencies</h2>
+<p>Given these allele frequencies, we can simulate genotypes from each
+of these populations by sampling from a binomial distribution.</p>
+<p><span class="math inline">\(G_{k_{n}} \sim Binom(n,
+p_{k})\)</span></p>
+<p>where <span class="math inline">\(n\)</span> is the number of
+success, and <span class="math inline">\(p\)</span> is the probability
+of a success. Here, <span class="math inline">\(n = 2\)</span> because
+we want 2 alleles per loci, and <span class="math inline">\(p\)</span>
+is the allele frequency at that loci.</p>
+<pre class="r"><code>genotypes &lt;- lapply(seq_along(all_allele_freqs), function(i){
+    matrix(data=rbinom(n=N*M, size=2, prob = all_allele_freqs[[i]]), nrow = N, ncol = M, byrow = T)
+})
+
+genotypes &lt;- do.call(rbind, genotypes)
+shuffle &lt;- sample(1:nrow(genotypes)) # I will shuffle the data
+genotypes &lt;- genotypes[shuffle, ]
+pops &lt;- rep(names(all_allele_freqs), each=N)
+pops &lt;- pops[shuffle] # shuffle pops too, since it tells me what populations the genotypes come from
+
+cat(&#39;Here is what the genotypes look like\n&#39;)</code></pre>
+<pre><code>Here is what the genotypes look like</code></pre>
+<pre class="r"><code>genotypes[1:5, 1:5]</code></pre>
+<pre><code>     [,1] [,2] [,3] [,4] [,5]
+[1,]    0    0    0    0    1
+[2,]    0    0    0    0    2
+[3,]    0    0    0    1    2
+[4,]    0    0    0    0    0
+[5,]    0    0    0    0    0</code></pre>
+<pre class="r"><code>cat(&#39;And here is what the population designation looks like \n&#39;)</code></pre>
+<pre><code>And here is what the population designation looks like </code></pre>
+<pre class="r"><code>pops[1:5]</code></pre>
+<pre><code>[1] &quot;population_1&quot; &quot;population_4&quot; &quot;population_2&quot; &quot;population_1&quot; &quot;population_4&quot;</code></pre>
+<p>Next, we can calculate the principal components (PCs) of this data,
+and plot PC1 vs PC2, to see where the most variability lies in the
+data</p>
+<pre class="r"><code># first change the row names of the genotype data to reflect the populations
+rownames(genotypes) &lt;- pops
+# I need to make sure that there are some variations in the SNPS - if there aren&#39;t any, I should remove them
+pca_genotypes &lt;- genotypes[ , which(apply(genotypes, 2, var) != 0)]
+# PCA
+pca_dt &lt;- prcomp(pca_genotypes, scale.=T, center=T)
+pca_dt$x[1:5, 1:5]</code></pre>
+<pre><code>                    PC1        PC2         PC3         PC4         PC5
+population_1   3.365441 -3.5048602  6.53058793  3.64826678 -1.55650504
+population_4 -12.673512  0.4779913 -0.01039136 -0.82388450 -0.02560419
+population_2   3.934678 -3.3804340 -5.75174919  0.04647499 -0.63133432
+population_1   3.557170 -5.6361956  5.75008629  0.91973143 -1.34829976
+population_4 -13.115938 -0.2937992 -0.22428779  0.17730445 -1.79836083</code></pre>
+<pre class="r"><code># colors
+mycolors &lt;- colorRampPalette(RColorBrewer::brewer.pal(8, &quot;Dark2&quot;))(n_pops)
+#mycolors &lt;- c(&#39;red&#39;, &#39;orange&#39;, &#39;green&#39;, &#39;blue&#39;)
+color_coding &lt;- factor(rownames(pca_dt$x), labels = mycolors)
+plot(pca_dt$x[, &#39;PC1&#39;], pca_dt$x[, &#39;PC2&#39;], bg=as.character(color_coding), xlab = &#39;PC1&#39;, ylab = &#39;PC2&#39;, frame.plot = F, pch=21, main=&#39;PC1 vs PC2 of 4 discrete populations&#39;)
+legend(&#39;topleft&#39;, legend=names_pop, pch=c(21, 21, 21, 21), pt.bg=mycolors, bty = &#39;n&#39;, xpd=NA)</code></pre>
+<p><img src="figure/simulating_populations.Rmd/unnamed-chunk-6-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>We can look at populations 1 and 2 only, and see if there is any
+difference between them.</p>
+<pre class="r"><code>pca_12 &lt;- pca_dt$x[rownames(pca_dt$x) %in% c(&#39;population_1&#39;, &#39;population_2&#39;), ]
+plot(pca_12[, &#39;PC1&#39;], pca_12[, &#39;PC2&#39;], col=rownames(pca_12) |&gt; as.factor(), bg=rownames(pca_12) |&gt; as.factor(), xlab = &#39;PC1&#39;, ylab = &#39;PC2&#39;, frame.plot = F, pch=19)</code></pre>
+<p><img src="figure/simulating_populations.Rmd/unnamed-chunk-7-1.png" width="672" style="display: block; margin: auto;" /></p>
+</div>
+<div id="simulating-continuous-populations" class="section level2">
+<h2>Simulating continuous populations</h2>
+<p>What I have done so far, is to simulate a discrete population of
+individuals. Think of it as people living in Mars, Earth, and Jupiter,
+and who have never intermingled since time immemorial. Population 3 is
+faraway from population 4. However, true human populations are not this
+way. How can we simulate a truly continuous population?</p>
+<p>First, notice that I am only simulating allele frequencies.
+Therefore, I can put a prior on my earlier-defined beta distribution to
+model the probability that an individual is from population <span
+class="math inline">\(m\)</span>. In other words, I am trying to
+estimate what percentage of an individual’s alleles might have come from
+a certain population <span class="math inline">\(m\)</span>. I will call
+this random variable, <span class="math inline">\(Q\)</span>.</p>
+<p><span class="math inline">\(Q \sim Dirichlet(\alpha)\)</span></p>
+<p>A trick I can use is to take an individual, ask how much of their
+genome is shared among each population I have, select that proportion of
+allele frequencies, and simulate their genotypes based on the selection
+for each population. To do this, I need to know how to distribute the
+<span class="math inline">\(\alpha\)</span> parameter used in the
+Dirichlet distribution. A trick I can use is to use the allele frequency
+distribution in the entire population. I will call this distribution the
+population grade distribution.</p>
+<p>Earlier, I simulated some allele frequencies
+<code>all_allele_freqs</code></p>
+<pre class="r"><code>ss &lt;- sapply(all_allele_freqs, sum)
+population_grade &lt;- ss/sum(ss)
+#population_grade &lt;- rand_vect_cont(4, 1)
+population_grade</code></pre>
+<pre><code>population_1 population_2 population_3 population_4 
+   0.2550745    0.2484377    0.2444566    0.2520312 </code></pre>
+<p>Then I can use this as a parameter to the Dirichlet distribution to
+simulate the percentage of an individual’s genotypes that is shared
+across all 4 populations.</p>
+<pre class="r"><code>q_matrix &lt;- gtools::rdirichlet(N * n_pops, alpha = population_grade) # I want to simulate, N individuals per population</code></pre>
+<p>Here is an illustration. Assuming that I am looking at the first
+individual</p>
+<pre class="r"><code># assuming one individual
+id1 &lt;- q_matrix[1, ]
+q_counts &lt;- floor(id1 * M) # number of loci shared
+q_counts</code></pre>
+<pre><code>[1]   0 273 101 124</code></pre>
+<p>The assumption here is that this individual shares 0 loci with
+population 1, 273 with population 2, 101 with population 3, and 124 loci
+with population 4, and 3 independent loci not share with any population.
+The sum is 498 (because I rounded down), but I don’t want this to be
+this case. Therefore, I will share the remaining loci with the highest
+number already available, so that the sum is 500.</p>
+<pre class="r"><code>remainder_ &lt;- M - sum(q_counts)
+q_counts[which.max(q_counts)] &lt;- q_counts[which.max(q_counts)] + remainder_
+q_counts</code></pre>
+<pre><code>[1]   0 275 101 124</code></pre>
+<p>Now, this sums to 500.</p>
+<p>Putting this into a reusable function…</p>
+<pre class="r"><code>q_counts_fxn &lt;- function(q_matrix, M){
+    apply(q_matrix, 1, function(each_row){
+        temp &lt;- floor(each_row * M)
+        remainder_ &lt;- M - sum(temp)
+        temp[which.max(temp)] &lt;- temp[which.max(temp)] + remainder_
+        temp
+    }) |&gt; t()
+}
+
+q_counts &lt;- q_counts_fxn(q_matrix, M)
+q_counts[1:5, ] # for the first 5 individuals</code></pre>
+<pre><code>     [,1] [,2] [,3] [,4]
+[1,]    0  275  101  124
+[2,]   28  472    0    0
+[3,]  373    0   70   57
+[4,]  495    0    3    2
+[5,]  130  197    1  172</code></pre>
+<pre class="r"><code>genotypes &lt;- matrix(NA, nrow = N*n_pops, ncol = M) # remember, N individuals per population
+
+for(q in 1:nrow(q_counts)){
+    pop_down &lt;- 1
+    m_loci &lt;- 1:M
+    i_loci &lt;- list() # this list contains the actual loci an individual has shared among the other populations
+    while(pop_down &lt;= ncol(q_counts)){
+        # sample pop 1 loci
+        pop_loci &lt;- sample(m_loci, size=q_counts[q, pop_down], replace = F)
+        if(length(pop_loci) == 0){
+            m_loci &lt;- m_loci[m_loci != 0]
+            i_loci[[pop_down]] &lt;- 0
+        } else {
+            m_loci &lt;- m_loci[!m_loci %in% pop_loci]
+            i_loci[[pop_down]] &lt;- pop_loci
+        }
+        pop_down &lt;- pop_down + 1
+    }
+    
+    g_loci &lt;- lapply(seq_along(i_loci), function(i){
+        temp &lt;- all_allele_freqs[[i]][i_loci[[i]]]
+        rbinom(n = length(temp), size = 2, prob = temp)
+    })
+
+    gi &lt;- vector(mode=&#39;numeric&#39;, length = M)
+    for(i in 1:n_pops){
+        gi[i_loci[[i]]] &lt;- g_loci[[i]]
+    }
+    
+    genotypes[q, ] &lt;- gi
+    
+}</code></pre>
+<pre class="r"><code>pop &lt;- paste0(&#39;population_&#39;, apply(q_counts, 1, which.max))
+# first change the row names of the genotype data to reflect the populations
+rownames(genotypes) &lt;- pop
+# I need to make sure that there are some variations in the SNPS - if there aren&#39;t any, I should remove them
+pca_genotypes &lt;- genotypes[ , which(apply(genotypes, 2, var) != 0)]
+# PCA
+pca_dt &lt;- prcomp(pca_genotypes, scale.=T, center=T)
+pca_dt$x[1:5, 1:5]</code></pre>
+<pre><code>                    PC1        PC2       PC3        PC4         PC5
+population_2  0.6843511  0.7775393 -1.986994 -0.5733985  1.35030907
+population_2  5.2284319 -4.4591500 -5.521154  1.0043617 -0.98073989
+population_1  1.2348129 -0.8818382  4.936476  0.7053044 -0.35913221
+population_1  3.5599093 -3.7287330  5.498686 -4.3138313  0.46221479
+population_2 -1.7057116 -2.4540082 -1.934744  0.7724849 -0.06324158</code></pre>
+<pre class="r"><code>mycolors &lt;- colorRampPalette(RColorBrewer::brewer.pal(8, &quot;Dark2&quot;))(n_pops)
+color_coding &lt;- factor(rownames(pca_dt$x), labels = mycolors)
+plot(pca_dt$x[, &#39;PC1&#39;], pca_dt$x[, &#39;PC2&#39;], bg=color_coding |&gt; as.character(), xlab = &#39;PC1&#39;, ylab = &#39;PC2&#39;, frame.plot = F, pch=21, main=&#39;PC1 vs PC2 of 4 continuous populations&#39;)
+legend(&#39;topleft&#39;, legend=names_pop, pch=c(21, 21, 21, 21), pt.bg=mycolors, bty = &#39;n&#39;, xpd = NA)</code></pre>
+<p><img src="figure/simulating_populations.Rmd/plotting%20continuous%20population-1.png" width="672" style="display: block; margin: auto;" /></p>
 <br>
 <p>
 <button type="button" class="btn btn-default btn-workflowr btn-workflowr-sessioninfo" data-toggle="collapse" data-target="#workflowr-sessioninfo" style="display: block;">
@@ -711,20 +1027,20 @@ attached base packages:
 [1] stats     graphics  grDevices utils     datasets  methods   base     
 
 other attached packages:
-[1] workflowr_1.7.0
+[1] gtools_3.9.2
 
 loaded via a namespace (and not attached):
- [1] Rcpp_1.0.8.3     bslib_0.3.1      compiler_4.1.3   pillar_1.7.0    
- [5] later_1.3.0      git2r_0.30.1     jquerylib_0.1.4  tools_4.1.3     
- [9] getPass_0.2-2    digest_0.6.29    jsonlite_1.8.0   evaluate_0.15   
-[13] tibble_3.1.7     lifecycle_1.0.1  pkgconfig_2.0.3  rlang_1.0.2     
-[17] cli_3.3.0        rstudioapi_0.13  yaml_2.3.5       xfun_0.31       
-[21] fastmap_1.1.0    httr_1.4.3       stringr_1.4.0    knitr_1.39      
-[25] sass_0.4.1       fs_1.5.2         vctrs_0.4.1      rprojroot_2.0.3 
-[29] glue_1.6.2       R6_2.5.1         processx_3.5.3   fansi_1.0.3     
-[33] rmarkdown_2.14   callr_3.7.0      magrittr_2.0.3   whisker_0.4     
-[37] ps_1.7.0         promises_1.2.0.1 htmltools_0.5.2  ellipsis_0.3.2  
-[41] httpuv_1.6.5     utf8_1.2.2       stringi_1.7.6    crayon_1.5.1    </code></pre>
+ [1] Rcpp_1.0.8.3       RColorBrewer_1.1-3 pillar_1.7.0       compiler_4.1.3    
+ [5] bslib_0.3.1        later_1.3.0        jquerylib_0.1.4    git2r_0.30.1      
+ [9] highr_0.9          workflowr_1.7.0    tools_4.1.3        digest_0.6.29     
+[13] jsonlite_1.8.0     evaluate_0.15      lifecycle_1.0.1    tibble_3.1.7      
+[17] pkgconfig_2.0.3    rlang_1.0.2        cli_3.3.0          rstudioapi_0.13   
+[21] yaml_2.3.5         xfun_0.31          fastmap_1.1.0      stringr_1.4.0     
+[25] knitr_1.39         fs_1.5.2           vctrs_0.4.1        sass_0.4.1        
+[29] rprojroot_2.0.3    glue_1.6.2         R6_2.5.1           fansi_1.0.3       
+[33] rmarkdown_2.14     magrittr_2.0.3     whisker_0.4        promises_1.2.0.1  
+[37] ellipsis_0.3.2     htmltools_0.5.2    httpuv_1.6.5       utf8_1.2.2        
+[41] stringi_1.7.6      crayon_1.5.1      </code></pre>
 </div>
 </div>
 
