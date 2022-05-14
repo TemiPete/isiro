@@ -9,9 +9,8 @@ editor_options:
 
 ### **I'm still working on this**
 
-
 ```{r eval=F}
-rstudioapi::getActiveDocumentContext()$path |> dirname() |> setwd()
+rstudioapi::getActiveDocumentContext()$path |> dirname() |> setwd() # not evaluated duting knitting or publishing
 ```
 
 ```{r load libraries}
